@@ -1,0 +1,221 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fefefe;
+    /* Cor de fundo*/
+    margin: 0;
+}
+
+/* menu de navegação */
+.menu {
+    background-color: #f78ecea2;
+    /* cor de fundo do menu */
+    text-align: right;
+    /*centraliza itens a direita */
+    padding: 15px 0;
+    /* espaço interno */
+    position: sticky;
+    /* Menu fica fixo no topo ao rolar a página */
+    width: 100%;
+    /* ocupa toda a largura */
+    top: 0;
+    /* fixa no topo */
+    left: 0;
+    z-index: 10;
+
+}
+
+.menu ul {
+    list-style: none;
+    /* remove marcadores da lista */
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    display: inline;
+    /* itens lado a lado */
+    margin: 0 15px;
+    /* Espaço entre os itens */
+}
+
+.menu a {
+    color: white;
+    /* cor do texto */
+    text-decoration: none;
+    /*remove sublinhado*/
+    font-weight: bold;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+    color: deeppink;
+}
+
+.hero {
+    
+    position: relative;
+    /*Necessário para posicionar o conteúdo sobre a imagem*/
+    width: 100%;
+    height: 50vh;
+    /*Ocupa toda ou parcial a altura da tela*/
+    overflow: hidden;
+    /*Evita que a imagem ultrapassa a seção*/
+
+}
+
+.hero img {
+    width: 100%;
+    /*Ocupa toda a largura*/
+    height: 50vh;
+    /*Ocupa toda a altura da seção*/
+    object-fit: cover;
+    /*Corta e ajusta a imagem proporcionalmente*/
+}
+
+/*Coluna imagem*/
+.sobre-imagem img {
+    width: 100%;
+    /*Ocupa toda largura disponível da coluna*/
+    max-width: 400px;
+    /*Limita o tamanho máximo da imagem*/
+    border-radius: 10px;
+    /* Bordas arredondadas*/
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    /*Sombra leve*/
+}
+
+.sobre {
+    background-color: #fdc9ec;
+    /*Fundo claro para destacar a seccão*/
+    padding: 80px 20px;
+    /*Espaçamento interno da seção */
+}
+
+.conteiner-sobre {
+    display: flex;
+    /* Ativa o FlexBox para alinhar colunas lado a lado */
+    align-items: center;
+    /*alinha verticalmente no centro*/
+    justify-content: center;
+    /*  centraliza horizotalmente*/
+    gap: 40px;
+    /* Espaço entre imagem e texto*/
+    flex-wrap: wrap;
+    /* Faz os elementos quebrarem linha em telas menores (responsivo) */
+}
+
+/* Coluna do texto */
+.sobre-texto {
+    max-width: 600px;
+    /* Limita largura do texto
+    para melhor leitura */
+}
+
+/* Estilo do título principal da seção */
+.sobre-texto h2 {
+    color: #e90a93;
+    /* Cor rosa do título */
+    margin-bottom: 20px;
+    /* Espaço abaixo do título */
+    font-size: 2em;
+    /* Tamanho maior do texto */
+}
+
+/* Subtítulo "Nossos Valores" */
+.sobre-texto h3 {
+    color: #e90a93;
+    margin-top: 30px;
+    /* Espaço acima do subtítulo */
+    margin-bottom: 20px;
+    /* Espaço abaixo do subtítulo */
+}
+
+/*Conteiner dos cards de valores*/
+.valores {
+    display: flex;
+    /* Flexbox para alinhar os cards*/
+    flex-wrap: wrap;
+    /* Quebra de linha em telas menores*/
+    gap: 20px;
+    /*Espaço entre os cards*/
+}
+
+/*cada card de valor */
+.valor-card {
+    background-color: rgb(230, 123, 167);
+    /* Fundo branco para destaque*/
+    padding: 20px;
+    /*Espaço interno do card*/
+    border-radius: 10px;
+    /*Bordas arredondadas */
+    flex: 1 1 200px;
+    /*responsivo: ocupa espaço e se ajusta */
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    /* Sombra leve */
+}
+
+.contato-form {
+    max-width: 600px;
+    /*Largura maxima do formulario*/
+    margin: 80px auto;
+    /*centraliza horizontalmente e da espaço vertical*/
+    background-color: rgb(248, 191, 226);
+    padding: 30px;
+    /*Espaçamento interno*/
+    border-radius: 10px;
+    /*Bordinhos arredondadas*/
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
+    /*sombra suave*/
+    text-align: left;
+    /*alinhar textos e esquerda*/
+
+}
+
+.contato-form h1 {
+    text-align: center;
+    /* titulo centralizado*/
+    margin-bottom: 20px;
+    color: #f99fe4;
+}
+
+.contato-form p {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.contato-form label {
+    display: block;
+    /*cada label em linha separada*/
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contato-form input,
+.contato-form textarea {
+    width: 100%;
+    padding: 10px 5px;
+    margin-bottom: 20px;
+    border: 1px solid #f99fe4;
+    border-radius: 5px;
+    font-size: 1em;
+
+}
+
+.contato-form button {
+    background-color: #ad0090;
+    color: rgb(255, 255, 255);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #ad0090;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+    font-size: 14px;
+}
